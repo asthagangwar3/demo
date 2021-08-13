@@ -1,0 +1,463 @@
+2021-08-13 17:06:12.289  INFO 24080 --- [main] com.example.RestApiApplication           : Starting RestApiApplication on asthag-win10 with PID 24080 (C:\Users\asthag\Downloads\Spring-Boot-REST-API\target\classes started by asthag in C:\Users\asthag\Downloads\Spring-Boot-REST-API)
+2021-08-13 17:06:12.309  INFO 24080 --- [main] com.example.RestApiApplication           : No active profile set, falling back to default profiles: default
+2021-08-13 17:06:14.624  INFO 24080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-13 17:06:14.714  INFO 24080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 1 repository interfaces.
+2021-08-13 17:06:15.377  INFO 24080 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f441b3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:06:15.455  INFO 24080 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$8ec46871] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:06:16.910  INFO 24080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-13 17:06:16.988  INFO 24080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-13 17:06:16.989  INFO 24080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-08-13 17:06:17.003  INFO 24080 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files (x86)\Zend\ZendServer\php\active\lib;C:\Program Files (x86)\Zend\ZendServer\php\active\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\TortoiseGit\bin;C:\Users\asthag\Desktop\sonar-scanner-2.8\bin;C:\Users\asthag\AppData\Local\Microsoft\WindowsApps;C:\Users\asthag\AppData\Roaming\npm;C:\Users\asthag\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\asthag\Desktop\eclipse-java-oxygen-3a-win32-x86_64\eclipse;;.]
+2021-08-13 17:06:17.370  INFO 24080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-13 17:06:17.370 DEBUG 24080 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-08-13 17:06:17.371  INFO 24080 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4907 ms
+2021-08-13 17:06:17.669 DEBUG 24080 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2021-08-13 17:06:17.670 DEBUG 24080 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2021-08-13 17:06:17.958  INFO 24080 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2021-08-13 17:06:17.969  INFO 24080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-13 17:06:19.344 ERROR 24080 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLSyntaxErrorException: Unknown database 'cricketer'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56) [flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:72) [flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1670) [flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356) [flyway-core-5.2.4.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) [spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.RestApiApplication.main(RestApiApplication.java:12) ~[classes/:na]
+
+2021-08-13 17:06:19.348  WARN 24080 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Unknown database 'cricketer'
+-----------------------------------------------------------------------
+SQL State  : 42000
+Error Code : 1049
+Message    : Unknown database 'cricketer'
+
+2021-08-13 17:06:19.352  INFO 24080 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-08-13 17:06:19.391  INFO 24080 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-13 17:06:19.393 ERROR 24080 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Unknown database 'cricketer'
+-----------------------------------------------------------------------
+SQL State  : 42000
+Error Code : 1049
+Message    : Unknown database 'cricketer'
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.RestApiApplication.main(RestApiApplication.java:12) [classes/:na]
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Unknown database 'cricketer'
+-----------------------------------------------------------------------
+SQL State  : 42000
+Error Code : 1049
+Message    : Unknown database 'cricketer'
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.internal.database.DatabaseFactory.createDatabase(DatabaseFactory.java:72) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1670) ~[flyway-core-5.2.4.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1356) ~[flyway-core-5.2.4.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 18 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'cricketer'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56) ~[flyway-core-5.2.4.jar:na]
+	... 24 common frames omitted
+
+2021-08-13 17:07:18.824  INFO 33120 --- [main] com.example.RestApiApplication           : Starting RestApiApplication on asthag-win10 with PID 33120 (C:\Users\asthag\Downloads\Spring-Boot-REST-API\target\classes started by asthag in C:\Users\asthag\Downloads\Spring-Boot-REST-API)
+2021-08-13 17:07:18.879  INFO 33120 --- [main] com.example.RestApiApplication           : No active profile set, falling back to default profiles: default
+2021-08-13 17:07:20.145  INFO 33120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-13 17:07:20.255  INFO 33120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97ms. Found 1 repository interfaces.
+2021-08-13 17:07:20.845  INFO 33120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bb0f148] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:07:20.905  INFO 33120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$fb313e7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:07:21.763  INFO 33120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-13 17:07:21.799  INFO 33120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-13 17:07:21.800  INFO 33120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-08-13 17:07:21.817  INFO 33120 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files (x86)\Zend\ZendServer\php\active\lib;C:\Program Files (x86)\Zend\ZendServer\php\active\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\TortoiseGit\bin;C:\Users\asthag\Desktop\sonar-scanner-2.8\bin;C:\Users\asthag\AppData\Local\Microsoft\WindowsApps;C:\Users\asthag\AppData\Roaming\npm;C:\Users\asthag\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\asthag\Desktop\eclipse-java-oxygen-3a-win32-x86_64\eclipse;;.]
+2021-08-13 17:07:22.196  INFO 33120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-13 17:07:22.197 DEBUG 33120 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-08-13 17:07:22.198  INFO 33120 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3181 ms
+2021-08-13 17:07:22.541 DEBUG 33120 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2021-08-13 17:07:22.542 DEBUG 33120 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2021-08-13 17:07:22.776  INFO 33120 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2021-08-13 17:07:22.795  INFO 33120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-13 17:07:23.161  INFO 33120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-13 17:07:23.164  INFO 33120 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3305/cricketer (MySQL 5.5)
+2021-08-13 17:07:23.331  INFO 33120 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2021-08-13 17:07:23.483  INFO 33120 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: `cricketer`.`flyway_schema_history`
+2021-08-13 17:07:23.835  INFO 33120 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `cricketer`: << Empty Schema >>
+2021-08-13 17:07:23.837  INFO 33120 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema `cricketer` to version 1 - init
+2021-08-13 17:07:23.966  INFO 33120 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema `cricketer` (execution time 00:00.483s)
+2021-08-13 17:07:25.468  INFO 33120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:07:26.838 DEBUG 33120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-08-13 17:07:27.077  INFO 33120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:07:27.106 DEBUG 33120 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-13 17:07:27.265  WARN 33120 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-13 17:07:27.350 DEBUG 33120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-08-13 17:07:27.405 DEBUG 33120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-13 17:07:27.430 DEBUG 33120 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-13 17:07:27.586  WARN 33120 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-13 17:07:28.311 ERROR 33120 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.RestApiApplication.main(RestApiApplication.java:12) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_161]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_161]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	... 14 common frames omitted
+
+2021-08-13 17:07:28.322  INFO 33120 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-08-13 17:07:28.332  INFO 33120 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-13 17:07:28.334 ERROR 33120 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2021-08-13 17:07:28.339  INFO 33120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:07:28.340  INFO 33120 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:07:28.342  INFO 33120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-13 17:07:28.353  INFO 33120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-13 17:07:50.218  INFO 33380 --- [main] com.example.RestApiApplication           : Starting RestApiApplication on asthag-win10 with PID 33380 (C:\Users\asthag\Downloads\Spring-Boot-REST-API\target\classes started by asthag in C:\Users\asthag\Downloads\Spring-Boot-REST-API)
+2021-08-13 17:07:50.222  INFO 33380 --- [main] com.example.RestApiApplication           : No active profile set, falling back to default profiles: default
+2021-08-13 17:07:51.461  INFO 33380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-13 17:07:51.562  INFO 33380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90ms. Found 1 repository interfaces.
+2021-08-13 17:07:52.173  INFO 33380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$532bf8fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:07:52.232  INFO 33380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$d2ac462d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:07:53.086  INFO 33380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-13 17:07:53.155  INFO 33380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-13 17:07:53.155  INFO 33380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-08-13 17:07:53.172  INFO 33380 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files (x86)\Zend\ZendServer\php\active\lib;C:\Program Files (x86)\Zend\ZendServer\php\active\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\TortoiseGit\bin;C:\Users\asthag\Desktop\sonar-scanner-2.8\bin;C:\Users\asthag\AppData\Local\Microsoft\WindowsApps;C:\Users\asthag\AppData\Roaming\npm;C:\Users\asthag\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\asthag\Desktop\eclipse-java-oxygen-3a-win32-x86_64\eclipse;;.]
+2021-08-13 17:07:53.431  INFO 33380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-13 17:07:53.431 DEBUG 33380 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-08-13 17:07:53.432  INFO 33380 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3117 ms
+2021-08-13 17:07:53.641 DEBUG 33380 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2021-08-13 17:07:53.642 DEBUG 33380 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2021-08-13 17:07:53.859  INFO 33380 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2021-08-13 17:07:53.873  INFO 33380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-13 17:07:54.179  INFO 33380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-13 17:07:54.183  INFO 33380 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3305/cricketer (MySQL 5.5)
+2021-08-13 17:07:54.283  INFO 33380 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.022s)
+2021-08-13 17:07:54.300  INFO 33380 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `cricketer`: 1
+2021-08-13 17:07:54.301  INFO 33380 --- [main] o.f.core.internal.command.DbMigrate      : Schema `cricketer` is up to date. No migration necessary.
+2021-08-13 17:07:55.779  INFO 33380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:07:57.046 DEBUG 33380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-08-13 17:07:57.276  INFO 33380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:07:57.303 DEBUG 33380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-13 17:07:57.354  WARN 33380 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-13 17:07:57.433 DEBUG 33380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-08-13 17:07:57.530 DEBUG 33380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-13 17:07:57.547 DEBUG 33380 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-13 17:07:57.711  WARN 33380 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-13 17:07:58.336 ERROR 33380 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.RestApiApplication.main(RestApiApplication.java:12) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_161]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_161]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	... 14 common frames omitted
+
+2021-08-13 17:07:58.342  INFO 33380 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-08-13 17:07:58.352  INFO 33380 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-13 17:07:58.354 ERROR 33380 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2021-08-13 17:07:58.357  INFO 33380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:07:58.360  INFO 33380 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:07:58.363  INFO 33380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-13 17:07:58.383  INFO 33380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-13 17:09:35.671  INFO 27116 --- [main] com.example.RestApiApplication           : Starting RestApiApplication on asthag-win10 with PID 27116 (C:\Users\asthag\Downloads\Spring-Boot-REST-API\target\classes started by asthag in C:\Users\asthag\Downloads\Spring-Boot-REST-API)
+2021-08-13 17:09:35.676  INFO 27116 --- [main] com.example.RestApiApplication           : No active profile set, falling back to default profiles: default
+2021-08-13 17:09:37.216  INFO 27116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-13 17:09:37.307  INFO 27116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 1 repository interfaces.
+2021-08-13 17:09:37.931  INFO 27116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ef375a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:09:37.994  INFO 27116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$e73c2d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:09:39.051  INFO 27116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-13 17:09:39.088  INFO 27116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-13 17:09:39.090  INFO 27116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-08-13 17:09:39.111  INFO 27116 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files (x86)\Zend\ZendServer\php\active\lib;C:\Program Files (x86)\Zend\ZendServer\php\active\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\TortoiseGit\bin;C:\Users\asthag\Desktop\sonar-scanner-2.8\bin;C:\Users\asthag\AppData\Local\Microsoft\WindowsApps;C:\Users\asthag\AppData\Roaming\npm;C:\Users\asthag\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\asthag\Desktop\eclipse-java-oxygen-3a-win32-x86_64\eclipse;;.]
+2021-08-13 17:09:39.439  INFO 27116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-13 17:09:39.440 DEBUG 27116 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-08-13 17:09:39.440  INFO 27116 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3696 ms
+2021-08-13 17:09:39.748 DEBUG 27116 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2021-08-13 17:09:39.750 DEBUG 27116 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2021-08-13 17:09:40.045  INFO 27116 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2021-08-13 17:09:40.056  INFO 27116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-13 17:09:40.519  INFO 27116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-13 17:09:40.526  INFO 27116 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3305/cricketer (MySQL 5.5)
+2021-08-13 17:09:40.664  INFO 27116 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.028s)
+2021-08-13 17:09:40.689  INFO 27116 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `cricketer`: 1
+2021-08-13 17:09:40.690  INFO 27116 --- [main] o.f.core.internal.command.DbMigrate      : Schema `cricketer` is up to date. No migration necessary.
+2021-08-13 17:09:42.181  INFO 27116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:09:43.449 DEBUG 27116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-08-13 17:09:43.670  INFO 27116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:09:43.706 DEBUG 27116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-13 17:09:43.777  WARN 27116 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-13 17:09:43.849 DEBUG 27116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-08-13 17:09:43.889 DEBUG 27116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-13 17:09:43.907 DEBUG 27116 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-13 17:09:44.039  WARN 27116 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-13 17:09:44.877 ERROR 27116 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.example.RestApiApplication.main(RestApiApplication.java:12) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_161]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_161]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_161]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.16.jar:9.0.16]
+	... 14 common frames omitted
+
+2021-08-13 17:09:44.897  INFO 27116 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-08-13 17:09:44.974  INFO 27116 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-13 17:09:44.980 ERROR 27116 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2021-08-13 17:09:44.987  INFO 27116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:09:44.989  INFO 27116 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:09:44.993  INFO 27116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-13 17:09:45.045  INFO 27116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-13 17:11:13.886  INFO 30908 --- [main] com.example.RestApiApplication           : Starting RestApiApplication on asthag-win10 with PID 30908 (C:\Users\asthag\Downloads\Spring-Boot-REST-API\target\classes started by asthag in C:\Users\asthag\Downloads\Spring-Boot-REST-API)
+2021-08-13 17:11:13.900  INFO 30908 --- [main] com.example.RestApiApplication           : No active profile set, falling back to default profiles: default
+2021-08-13 17:11:15.468  INFO 30908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-13 17:11:15.569  INFO 30908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 1 repository interfaces.
+2021-08-13 17:11:16.334  INFO 30908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43936e76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:11:16.393  INFO 30908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$c313bba8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:11:17.423  INFO 30908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-13 17:11:17.461  INFO 30908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-13 17:11:17.461  INFO 30908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-08-13 17:11:17.472  INFO 30908 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_161/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files (x86)\Zend\ZendServer\php\active\lib;C:\Program Files (x86)\Zend\ZendServer\php\active\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\CheckPoint\Endpoint Security\Endpoint Common\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\TortoiseGit\bin;C:\Users\asthag\Desktop\sonar-scanner-2.8\bin;C:\Users\asthag\AppData\Local\Microsoft\WindowsApps;C:\Users\asthag\AppData\Roaming\npm;C:\Users\asthag\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\asthag\Desktop\eclipse-java-oxygen-3a-win32-x86_64\eclipse;;.]
+2021-08-13 17:11:17.711  INFO 30908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-13 17:11:17.713 DEBUG 30908 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-08-13 17:11:17.714  INFO 30908 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3744 ms
+2021-08-13 17:11:17.928 DEBUG 30908 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2021-08-13 17:11:17.929 DEBUG 30908 --- [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'logFilter' configured for use
+2021-08-13 17:11:18.177  INFO 30908 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2021-08-13 17:11:18.190  INFO 30908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-13 17:11:18.462  INFO 30908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-13 17:11:18.466  INFO 30908 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3305/cricketer (MySQL 5.5)
+2021-08-13 17:11:18.567  INFO 30908 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.022s)
+2021-08-13 17:11:18.583  INFO 30908 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `cricketer`: 1
+2021-08-13 17:11:18.584  INFO 30908 --- [main] o.f.core.internal.command.DbMigrate      : Schema `cricketer` is up to date. No migration necessary.
+2021-08-13 17:11:20.073  INFO 30908 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:11:21.294 DEBUG 30908 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-08-13 17:11:21.511  INFO 30908 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:11:21.549 DEBUG 30908 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-13 17:11:21.607  WARN 30908 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-13 17:11:21.678 DEBUG 30908 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-08-13 17:11:21.705 DEBUG 30908 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-13 17:11:21.735 DEBUG 30908 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-13 17:11:21.901  WARN 30908 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-13 17:11:22.585  INFO 30908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-13 17:11:22.599  INFO 30908 --- [main] com.example.RestApiApplication           : Started RestApiApplication in 9.277 seconds (JVM running for 9.848)
+2021-08-13 17:21:43.868  INFO 30908 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-13 17:21:43.868  INFO 30908 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-13 17:21:43.869 DEBUG 30908 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-08-13 17:21:43.901 DEBUG 30908 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-08-13 17:21:43.903  INFO 30908 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2021-08-13 17:21:43.922 DEBUG 30908 --- [http-nio-8080-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : Before request [uri=/api/cricketer/1]
+2021-08-13 17:21:43.927 DEBUG 30908 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/cricketer/1", parameters={}
+2021-08-13 17:21:43.940 DEBUG 30908 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.hateoas.PagedResources<com.example.model.Cricketer> com.example.web.controller.CricketController.getCricketer(java.lang.Long,org.springframework.data.domain.Pageable,org.springframework.data.web.PagedResourcesAssembler)
+2021-08-13 17:21:44.358 DEBUG 30908 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/json, application/schema+json, application/json-patch+json, application/merge-patch+json, application/x-spring-data-verbose+json, application/x-spring-data-compact+json, application/json, application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
+2021-08-13 17:21:44.382 DEBUG 30908 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [PagedResource { content: [Resource { content: com.example.model.Cricketer@312ad2e9, links: [] }], me (truncated)...]
+2021-08-13 17:21:44.518 DEBUG 30908 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-13 17:21:44.523 DEBUG 30908 --- [http-nio-8080-exec-9] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST DATA : uri=/api/cricketer/1]
+2021-08-13 17:33:48.292  INFO 29016 --- [main] com.example.RestApiApplicationTests      : Starting RestApiApplicationTests on asthag-win10 with PID 29016 (started by asthag in C:\Users\asthag\Downloads\Spring-Boot-REST-API)
+2021-08-13 17:33:48.294  INFO 29016 --- [main] com.example.RestApiApplicationTests      : No active profile set, falling back to default profiles: default
+2021-08-13 17:33:48.374 DEBUG 29016 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@61c4eee0
+2021-08-13 17:33:49.977  INFO 29016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-13 17:33:50.102  INFO 29016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88ms. Found 1 repository interfaces.
+2021-08-13 17:33:50.781  INFO 29016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e90ed9d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:33:50.887  INFO 29016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$688f2706] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-13 17:33:51.184  INFO 29016 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2021-08-13 17:33:51.200  INFO 29016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-13 17:33:51.580  INFO 29016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-13 17:33:51.584  INFO 29016 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://localhost:3305/cricketer (MySQL 5.5)
+2021-08-13 17:33:51.694  INFO 29016 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.026s)
+2021-08-13 17:33:51.709  INFO 29016 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema `cricketer`: 1
+2021-08-13 17:33:51.711  INFO 29016 --- [main] o.f.core.internal.command.DbMigrate      : Schema `cricketer` is up to date. No migration necessary.
+2021-08-13 17:33:54.083  INFO 29016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:33:55.804 DEBUG 29016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-08-13 17:33:56.474  INFO 29016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:33:56.530 DEBUG 29016 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-13 17:33:56.626  WARN 29016 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-13 17:33:56.717 DEBUG 29016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2021-08-13 17:33:56.761 DEBUG 29016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-13 17:33:56.786 DEBUG 29016 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-13 17:33:56.954  WARN 29016 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-13 17:33:57.521  INFO 29016 --- [main] com.example.RestApiApplicationTests      : Started RestApiApplicationTests in 9.702 seconds (JVM running for 11.003)
+2021-08-13 17:33:57.765 DEBUG 29016 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@61c4eee0, started on Fri Aug 13 17:33:48 IST 2021
+2021-08-13 17:33:57.783  INFO 29016 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-13 17:33:57.786  INFO 29016 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-13 17:33:57.791  INFO 29016 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-13 17:33:57.803  INFO 29016 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
